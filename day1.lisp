@@ -3,9 +3,7 @@
   (:use :cl))
 (in-package :day1)
 
-
-(defun read-lines (file)
-  (uiop:read-file-lines file))
+(load "utils.lisp")
 
 (defun 2020? (&rest values)
   (= (reduce #'+ values) 2020))
